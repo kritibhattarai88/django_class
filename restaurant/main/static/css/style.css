@@ -317,12 +317,16 @@ button {
 
 .banner_section {
     width: 100%;
-    background-image: url(../images/banner-bg.jpg);
     height: auto;
-    background-size: cover;
-    padding: 10px 0px 25px 0px;
+    background-image: url(../images/banner123.jpg);
+    background-size: 100% 100%; /* Use 'contain' to fit the entire image */
+    background-position: center;
     background-repeat: no-repeat;
+    padding: 10px 0px 25px 0px;
+    background-color: #f0f0f0; /* Optional: Set a background color for empty space */
+    opacity: 0.9;
 }
+
 
 .banner_title {
     padding: 100px 0px;
@@ -343,9 +347,11 @@ button {
 
 .there_text {
     font-size: 16px;
-    color: #fff;
+    color:black;
+    font-weight: bold;
     margin: 0px;
     padding-bottom: 30px;
+    background-color: white;
 }
 
 /* /* .learnmore_bt {

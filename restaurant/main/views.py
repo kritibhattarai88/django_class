@@ -14,6 +14,7 @@ from django.contrib.auth.forms import PasswordChangeForm
 
 
 # Create your views here.
+date = datetime.now()
 
 def index(request):
     buff=Momo.objects.filter(category='buff')
@@ -34,35 +35,35 @@ def index(request):
         recipient_list=[email, 'kritibhattarai88@gmail.com']
         send_mail(subject,message,from_email,recipient_list,fail_silently=True)
         
-    return render(request,'main/index.html',{'buff':buff,'chicken':chicken,'veg':veg})
+    return render(request,'main/index.html',{'buff':buff,'chicken':chicken,'veg':veg, 'date':date})
 
 
 def about(request):
-    return render(request,'main/about.html')
+    return render(request,'main/about.html',{'date':date})
 
 
 def contact(request):
-    return render(request,'main/contact.html')
+    return render(request,'main/contact.html',{'date':date})
 
 @login_required(login_url='log_in')
 def menu(request):
-    return render(request,'main/menu.html')
+    return render(request,'main/menu.html',{'date':date})
 
 
 def services(request):
-    return render(request,'main/services.html')
+    return render(request,'main/services.html',{'date':date})
 
 def terms(request):
-    return render(request, 'main/terms.html')
+    return render(request, 'main/terms.html',{'date':date})
 
 def privacy(request):
-    return render(request, 'main/privacy.html')
+    return render(request, 'main/privacy.html',{'date':date})
 
 def policy(request):
-    return render(request, 'main/policy.html')
+    return render(request, 'main/policy.html',{'date':date})
 
 def support(request):
-    return render(request, 'main/support.html')
+    return render(request, 'main/support.html',{'date':date})
 
 
 
@@ -156,6 +157,4 @@ def change_password(request):
             form.save()
             return redirect('log_in')
 
-
-        
     return render(request, 'auth/change_password.html', {'form':form})
