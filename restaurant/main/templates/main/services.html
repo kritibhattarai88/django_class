@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   Service
+{% endblock title %}
+
+{% block content %}
+   
+
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital" data-aos="fade-up" data-aos-duration="1000"> Our Services</h1>
+                  <p class="services_text" data-aos="fade-up" data-aos-duration="1000">KNOWING OUR CUSTOMER NEEDS </p>
+                  <p class="services_text" data-aos="fade-up" data-aos-duration="1000">We're more then just momos</p>
+                  <p class="services_text" data-aos="fade-up" data-aos-duration="1000">We're a full-services dining experience!</p>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main active" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="house_icon">
+                           <img src="{% static 'images/high-quality.png' %}" class="image_1">
+                           <img src="{% static 'images/quality2.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Quality Food</h3>
+                        <p class="tation_text">
+                           We believe in using only the highest quality ingredients to create momos that are bursting with flavor. 
+                           Our fillings are prepared daily with fresh, vegetables and succulent meats.
+                           
+                        </p>
+                        <div class="readmore_bt"><a href="">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="house_icon">
+                           <img src="{% static 'images/party.png'%}" class="image_1">
+                           <img src="{% static 'images/party2.png'%}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Private Party</h3>
+                        <p class="tation_text">
+                           Pair your momos with our selection of dipping sauces and chutneys for an unforgettable get-together. 
+                           Let us help you create a fun and flavorful feast for your next celebration!
+                        </p>
+                        <div class="readmore_bt"><a href="">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="house_icon">
+                           <img src="{% static 'images/food-cover.png' %}" class="image_1">
+                           <img src="{% static 'images/catering2.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Catering</h3>
+                        <p class="tation_text">
+                           Make your next gathering unforgettable with our momo catering service! 
+                           We offer a variety of catering packages to suit any event size and budget as per need.
+                        </p>
+                        <div class="readmore_bt"><a href="">Read More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+
+  
+
+    
+   <!-- Javascript files-->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+   crossorigin="anonymous"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+   crossorigin="anonymous"></script>
+   
+   <script src=""></script>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+
+   <!-- sidebar -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+
+   <script src="https://kit.fontawesome.com/b52396679f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+{% endblock content %}
